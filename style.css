@@ -1,0 +1,50 @@
+body {
+    height: 87vh;
+    background-color: #F9F9F9;
+    margin: 0 0 0 0;
+}
+
+.attribute {
+    font-family: Roboto, Georgia, 'Times New Roman', Times, serif;
+    font-size: 5vh;
+    padding: 2vh 0 0 2vw;
+}
+
+#attributes {
+    position: relative;
+    margin-top: 5vh;
+}
+
+#credits {
+   float: right;
+   position: relative;
+}
+.icon {
+    height: 9vh;
+    width: 9vh;
+    position: relative;
+}
+
+#icons {
+    position: absolute;
+    height: 40vh;
+    padding: 3vh 2vw 3vh 2vw;
+}
+
+
+#nav-bar {
+    height: 13vh;
+    width: 100vw;
+    background-color: #f6f6f6;
+    position: fixed, relative;
+}
+
+#name {
+    padding: 3vh 0 3vh 2vw;
+    font-family: Roboto, Georgia, 'Times New Roman', Times, serif;
+    font-size: 7vh;
+}
+
+svg {
+    position: relative;
+}

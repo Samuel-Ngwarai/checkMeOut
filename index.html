@@ -1,23 +1,36 @@
----
-layout: default
----
+<!DOCTYPE html>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<html>
+  <head>
+    <title>Samuel Ngwarai</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="style.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="nav-bar">
+        <div id="name">Samuel Ngwarai</div>
+      </div>
+      <div id="credits">
+          <div>credits</div>
+          <span><div>Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></span>
+        </div>
+      <div id="attributes">
+        <div class="attribute">
+          Software Developer
+        </div>
+        <div class="attribute">
+          Leader
+        </div>
+      </div>
+      <div id="icons">
+          <a href="https://www.linkedin.com/in/samuel-ngwarai/" target="_blank">
+            <img class="icon" src="img/linkedin-logo.svg"/>
+          </a>
+          <a href="https://github.com/Samuel-Ngwarai" target="_blank">
+            <img class="icon" src="img/github-logo.svg"/>
+          </a>
+      </div>
+    </main>
+  </body>
+</html>
