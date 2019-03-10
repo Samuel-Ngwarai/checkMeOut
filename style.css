@@ -1,4 +1,5 @@
 body {
+    font-family: Roboto, 'Times New Roman', Times, serif;
     padding: 0;
     margin: 0;
 }
@@ -7,13 +8,28 @@ a {
     text-decoration: none;
 }
 
-#name {
-    font-family: Roboto, 'Times New Roman', Times, serif;
-    font-size: 3em;
+/* unvisited link */
+a:link {
+color: blue;
 }
 
-#name-subtitle {
-    font-family: Roboto, 'Times New Roman', Times, serif;
+/* visited link */
+a:visited {
+color: purple;
+}
+
+/* mouse over link */
+a:hover {
+color: navy;
+}
+
+/* selected link */
+a:active {
+color: blue;
+}
+
+#name {
+    font-size: 3em;
 }
 
 .center-content {
@@ -33,13 +49,11 @@ a {
     width: 50px;
 }
 
-.left-nav {
-    height: 100%;
+.left-nav, #credits {
     width: 40vw;
     position: fixed;
     overflow-x: hidden;
     z-index: 1;
-    top: 0;
     left: 0;
     background-color: #F5F3F3;
     transition: 0.5s;
@@ -52,12 +66,47 @@ a {
     -webkit-align-items: center;
     align-items: center;
     justify-content: center;
-    height: 100%;
+}
+
+.left-nav {
+    height: 95%;
+    top: 0;
+}
+
+#credits {
+    height: 5%;
+    bottom: 0;
+}
+
+#credits-icon {
+    height: 20px;
+    width: 20px;
 }
 
 .page {
     margin-left: 40vw;
     width: 60vw;
-    height: 2000px;
     right: 0;
+}
+
+#first-page {
+    height: 100vh;
+}
+
+#top-half {
+    transition: 0.5s;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+}
+
+#intro {
+    font-size: 2em;
 }
