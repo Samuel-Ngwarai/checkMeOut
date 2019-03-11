@@ -10,22 +10,17 @@ a {
 
 /* unvisited link */
 a:link {
-color: blue;
+color: white;
 }
 
 /* visited link */
 a:visited {
-color: purple;
+color:navy;
 }
 
 /* mouse over link */
 a:hover {
-color: navy;
-}
-
-/* selected link */
-a:active {
-color: blue;
+color: black;
 }
 
 #name {
@@ -93,8 +88,8 @@ color: blue;
     height: 100vh;
 }
 
-#top-half {
-    transition: 0.5s;
+#top-half, .nav-item {
+    transition: 0.1s;
     display: -webkit-flexbox;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -104,9 +99,34 @@ color: blue;
     -webkit-align-items: center;
     align-items: center;
     justify-content: center;
+}
+
+#top-half {
     height: 20%;
 }
 
 #intro {
     font-size: 2em;
+}
+
+#nav-bar {
+    list-style-type: none;
+    margin: 0;
+    background-color: #F5F3F3;
+    padding: 0;
+}
+
+.nav-item {
+    background-color: #F5F3F3;
+    float: left;
+    font-size: 2em;
+    width: 29.9vw;
+    margin: 0;
+    height: 80px;
+    border-left: 0.1vw solid white;
+}
+
+.nav-item:hover:not(.active) {
+    background-color: #f8f8f8;
+    cursor: pointer;
 }
