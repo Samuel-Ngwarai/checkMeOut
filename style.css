@@ -148,6 +148,24 @@ color: black;
     background-color: white;
 }
 
+#first-attr:hover .attr-icon {
+    height: 20vh;
+    width: 20vh;
+    opacity: 0.2;
+}
+
+#second-attr:hover .attr-icon {
+    height: 25vh;
+    width: 25vh;
+    opacity: 0.2;
+}
+
+#third-attr:hover .attr-icon {
+    height: 20vh;
+    width: 20vh;
+    opacity: 0.2;
+}
+
 #second-attr:hover {
     width: 39.95vw;
     background-color: white;
@@ -167,6 +185,8 @@ color: black;
 }
 
 .attr-icon {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
     height: 8vh;
     width: 8vh;
     margin: 0;
