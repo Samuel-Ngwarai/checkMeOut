@@ -88,7 +88,7 @@ color: black;
     height: 100vh;
 }
 
-#top-half, .nav-item {
+#top-half, .nav-item, #first-attr, #second-attr, #third-attr {
     transition: 0.1s;
     display: -webkit-flexbox;
     display: -ms-flexbox;
@@ -122,11 +122,52 @@ color: black;
     font-size: 2em;
     width: 29.9vw;
     margin: 0;
-    height: 80px;
+    height: 10vh;
     border-left: 0.1vw solid white;
 }
 
 .nav-item:hover:not(.active) {
     background-color: #f8f8f8;
     cursor: pointer;
+}
+
+#first-attr, #second-attr, #third-attr {
+    width: 19.95vw;
+    border-left: 0.05vw solid white;
+    height: 70vh;
+    float: left;
+    background-color: #F5F3F3;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    text-align: center;
+    overflow: hidden;
+}
+
+#first-attr:hover {
+    width: 39.95vw;
+    background-color: white;
+}
+
+#second-attr:hover {
+    width: 39.95vw;
+    background-color: white;
+}
+
+#third-attr:hover {
+    width: 39.95vw;
+    background-color: white;
+}
+
+#attributes:hover > div:not(:hover) {
+    width: 9.95vw;
+}
+
+#attributes {
+    padding-top: 10vh;
+}
+
+.attr-icon {
+    height: 8vh;
+    width: 8vh;
+    margin: 0;
 }
