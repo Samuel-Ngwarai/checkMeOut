@@ -1,0 +1,45 @@
+/*  
+    PRETTIFY EVERYTHING! 
+*/
+
+body {
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+}
+
+a:link {
+color: white;
+}
+
+a:visited {
+color:navy;
+}
+
+a:hover {
+color: black;
+}
+
+/* CENTRALIZE */
+.center-content {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.centralize {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}

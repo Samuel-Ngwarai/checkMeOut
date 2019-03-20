@@ -1,0 +1,37 @@
+/* 
+    PRETTIFY LEFT SIDE!
+*/
+
+.left-nav, #credits {
+    width: 40vw;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1;
+    left: 0;
+    background-color: #F5F3F3;
+    transition: 0.5s;
+}
+
+.left-nav {
+    height: 95%;
+    top: 0;
+}
+
+#name {
+    font-size: 3em;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+#credits {
+    height: 5%;
+    bottom: 0;
+}
+
+#credits-icon {
+    height: 20px;
+    width: 20px;
+}
