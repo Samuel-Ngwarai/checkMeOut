@@ -1,0 +1,116 @@
+/* 
+    MAKE EVERYTHING ELSE PRETTY !
+*/
+
+
+/* WHOLE PAGE */
+.page {
+    margin-left: 40vw;
+    width: 60vw;
+    right: 0;
+}
+
+#first-page {
+    height: 100vh;
+}
+
+
+/* TOP HALF */
+#top-half {
+    height: 20%;
+}
+
+#intro {
+    font-size: 2em;
+}
+
+/* NAV BAR */
+#nav-bar {
+    list-style-type: none;
+    margin: 0;
+    background-color: #F5F3F3;
+    padding: 0;
+}
+
+.nav-item {
+    /* background-color: #F5F3F3; */
+    float: left;
+    font-size: 2em;
+    width: 29.9vw;
+    margin: 0;
+    height: 10vh;
+    border-left: 0.1vw solid white;
+}
+
+.nav-item:hover:not(.active) {
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+/* ACTUAL CONTENT */
+
+#attributes {
+    padding-top: 10vh;
+}
+
+#first-attr, #second-attr, #third-attr{
+    width: 19.95vw;
+    border-left: 0.05vw solid white;
+    height: 70vh;
+    float: left;
+    background-color: #F5F3F3;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    text-align: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8vh 8vh;
+}
+
+#first-attr {
+    background-image: url('../img/first.svg');
+}
+
+#second-attr {
+    background-image: url('../img/second.svg');
+}
+
+#third-attr {
+    background-image: url('../img/third.svg');
+}
+
+/* SKETCHY: Using 2 backgroundImages for over text background image opacity change. */
+#first-attr:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../img/first.svg');
+}
+
+#first-attr:hover .attr-details {
+    display:block;
+}
+
+#second-attr:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../img/second.svg');
+}
+
+#third-attr:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../img/third.svg');
+}
+
+#first-attr:hover, #second-attr:hover, #third-attr:hover {
+    width: 39.95vw;
+    background-color: white;
+    background-size: 20vh 20vh;
+}
+
+#attributes:hover > div:not(:hover) {
+    width: 9.95vw;
+}
+
+.attr-details {
+    display: none;
+}
+
+.attr-title {
+    font-size: 2em;
+}
