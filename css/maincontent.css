@@ -59,13 +59,15 @@
     height: 70vh;
     float: left;
     background-color: #F5F3F3;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
     text-align: center;
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 8vh 8vh;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
 #first-attr {
@@ -82,19 +84,15 @@
 
 /* SKETCHY: Using 2 backgroundImages for over text background image opacity change. */
 #first-attr:hover {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../img/first.svg');
-}
-
-#first-attr:hover .attr-details {
-    display:block;
+    background-image: url('../img/first_transparent.svg');
 }
 
 #second-attr:hover {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../img/second.svg');
+    background-image: url('../img/second_transparent.svg');
 }
 
 #third-attr:hover {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../img/third.svg');
+    background-image: url('../img/third_transparent.svg');
 }
 
 #first-attr:hover, #second-attr:hover, #third-attr:hover {
@@ -108,9 +106,57 @@
 }
 
 .attr-details {
-    display: none;
+    /* transition: 0s display; */
+}
+
+#first-attr:hover .attr-title {
+    font-size: 4em;
+    color: black;
+}
+
+#second-attr:hover .attr-title {
+    font-size: 4em;
+    color: black;
+}
+
+#third-attr:hover .attr-title {
+    font-size: 4em;
+    color: black;
+}
+
+#first-attr:hover .attr-info {
+    font-size: 2em;
+    color: black;
+}
+
+#second-attr:hover .attr-info {
+    font-size: 2em;
+    color: black;
+}
+
+#third-attr:hover .attr-info {
+    font-size: 2em;
+    color: black;
 }
 
 .attr-title {
-    font-size: 2em;
+    font-size: 0em;
+    color: transparent;
+    display: block;
+
+    -webkit-transition: color 1s, font-size 0.5s;
+    -moz-transition: color 1s, font-size 0.5s;
+    -o-transition: color 1s, font-size 0.5s;
+    transition: color 1s, font-size 0.5s;
+}
+
+.attr-info {
+    font-size: 0em;
+    color: transparent; 
+    display: block;
+
+    -webkit-transition: color 1s, font-size 0.5s;
+    -moz-transition: color 1s, font-size 0.5s;
+    -o-transition: color 1s, font-size 0.5s;
+    transition: color 1s, font-size 0.5s;
 }
