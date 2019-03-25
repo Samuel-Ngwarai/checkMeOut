@@ -47,7 +47,17 @@
     cursor: pointer;
 }
 
-/* ACTUAL CONTENT */
+#whoIAm, #whatIBuilt {
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    border: none;
+}
+
+#whoIAm:focus, #whatIBuilt:focus {
+    border: none;
+    outline: none;
+}
+
+/* ATRIBUTES */
 
 #attributes {
     padding-top: 10vh;
@@ -83,6 +93,16 @@
 }
 
 /* SKETCHY: Using 2 backgroundImages for over text background image opacity change. */
+#attributes:hover > div:not(:hover) {
+    width: 9.95vw;
+}
+
+#first-attr:hover, #second-attr:hover, #third-attr:hover {
+    width: 39.95vw;
+    background-color: white;
+    background-size: 20vh 20vh;
+}
+
 #first-attr:hover {
     background-image: url('../img/first_transparent.svg');
 }
@@ -95,31 +115,7 @@
     background-image: url('../img/third_transparent.svg');
 }
 
-#first-attr:hover, #second-attr:hover, #third-attr:hover {
-    width: 39.95vw;
-    background-color: white;
-    background-size: 20vh 20vh;
-}
-
-#attributes:hover > div:not(:hover) {
-    width: 9.95vw;
-}
-
-.attr-details {
-    /* transition: 0s display; */
-}
-
 #first-attr:hover .attr-title {
-    font-size: 4em;
-    color: black;
-}
-
-#second-attr:hover .attr-title {
-    font-size: 4em;
-    color: black;
-}
-
-#third-attr:hover .attr-title {
     font-size: 4em;
     color: black;
 }
@@ -129,8 +125,18 @@
     color: black;
 }
 
+#second-attr:hover .attr-title {
+    font-size: 4em;
+    color: black;
+}
+
 #second-attr:hover .attr-info {
     font-size: 2em;
+    color: black;
+}
+
+#third-attr:hover .attr-title {
+    font-size: 4em;
     color: black;
 }
 
@@ -139,7 +145,7 @@
     color: black;
 }
 
-.attr-title {
+.attr-title, .attr-info  {
     font-size: 0em;
     color: transparent;
     display: block;
@@ -150,13 +156,16 @@
     transition: color 1s, font-size 0.5s;
 }
 
-.attr-info {
-    font-size: 0em;
-    color: transparent; 
-    display: block;
+/* PROJECTS */
 
-    -webkit-transition: color 1s, font-size 0.5s;
-    -moz-transition: color 1s, font-size 0.5s;
-    -o-transition: color 1s, font-size 0.5s;
-    transition: color 1s, font-size 0.5s;
+#projects {
+    padding-top: 10vh;
+}
+
+#projects-home {
+    height: 70vh;
+}
+
+#coming-soon {
+    font-size: 3em;
 }
